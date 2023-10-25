@@ -1,0 +1,100 @@
+/* えりかの編集 */
+
+/* ヘッダー */
+header {
+    /* background-color: #f2f6f7; */
+    background-color: #e9f9fa;
+    opacity: 0.8;
+}
+
+/* ナビのテキスト */
+.nav-text {
+    font-family: "Zen Maru Gothic", sans-serif;
+}
+
+/* ★ナビの位置できない */
+/* .nav-text-position {
+} */
+
+/* メイン画像のテキスト　ないとうこどもクリニック */
+.effect h1 {
+    font-size: 70px;
+    line-height: 100px;
+    color: rgb(59, 239, 245);
+    /* color: rgb(255, 142, 221); */
+    font-weight: bold;
+    /* font-family: "Cherry Bomb One", sans-serif; */
+    font-family: "Zen Maru Gothic", "Cherry Bomb One", sans-serif;
+    /* text-shadow: 1px 1px 0 #6c6666, -1px -1px 0 #6c6666, -1px 1px 0 #6c6666,
+        1px -1px 0 #6c6666, 0 1px 0 #6c6666, 0 -1px 0 #6c6666, -1px 0 0 #6c6666,
+        1px 0 0 #6c6666; */
+    letter-spacing: 30px;
+    text-align: center;
+    width: 900px;
+    /* padding: 30px 30px 30px 30px; */
+    margin-top: 300px;
+}
+/* .effect p{
+    color: #9c9b9b;
+    font-size: 25px;
+    letter-spacing: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin-top: 30px;
+} */
+
+/* 雲 */
+/* .cloud {
+    display: block;
+    margin-top: 350px;
+    width: 400px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 115px 66px 0 -5px #ffffff, -90px 81px 0 -17px #ffffff,
+        10px 0 78px #ffffff, 102px -1px 0 -1px #ffffff;
+    opacity: 0.93;
+} */
+
+/* HOME　お問い合わせの下のボトム */
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* お知らせ・コラム文字 */
+.cont_wrap.effect.clfix h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 当院の理念 */
+.obi_001 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+/* Concept */
+.obi_001 h2 span {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 0 20px 10px 20px;
+}
+
+/*★理念の内容　文字大きくできない */
+
+/* ★治療内容 診療予定　お問い合わせ 　サイズ変えれない*/
+.box_att h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* 当院についてページ  */
+/* ★私達の目指すもの  変えれない */
+.cont_wrap_effect h2 {
+    font-size: 50px;
+    font-weight: bold;
+}

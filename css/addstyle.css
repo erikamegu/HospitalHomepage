@@ -1,0 +1,156 @@
+.scroll-fix {
+    width: 100%;
+    overflow: hidden;
+}
+/* HOME メイン画像 */
+.index-top {
+    height: 100vh;
+    /* 子どもたちの写真 */
+    /* background-image: url("../img/3707648_s.jpg"); */
+    background-image: url("../img/AdobeStock_183317369.jpeg");
+    background-position: center 30%;
+    background-size: cover;
+    position: relative;
+}
+.coram-list {
+    cursor: pointer;
+}
+.coram-list:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+/* ホームの固定背景の画像 */
+.obi_001 {
+    background-image: url("../img/tanaphong-toochinda-GagC07wVvck-unsplash.jpg");
+    background-size: cover;
+}
+.obi_001 h2 {
+    text-shadow: 1px 1px 2px #000;
+}
+.obi_001 h2 span {
+    text-shadow: none;
+}
+/* HOME 理念　文章  */
+.obi_001 p {
+    font-size: 20px;
+    text-shadow: 0.5px 0.5px 1px #000;
+    margin-bottom: 50px;
+}
+.box_right.coram-box {
+    padding: 10px !important;
+}
+.coram {
+    display: flex;
+    align-content: center;
+    height: 101px;
+}
+.coram__imgbox {
+    overflow: hidden;
+    background: #ccc;
+    min-width: 100px;
+}
+.coram__img {
+    object-fit: cover;
+    object-position: 80% 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+}
+.coram__textbox {
+    text-align: left;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.coram__title {
+    font-weight: 500;
+}
+.coram__discription {
+    line-height: 1.5;
+}
+.coram__time {
+    margin: 0 0 !important;
+    padding: 0 20px !important;
+}
+/* HOME 診療予定　  */
+.table-area {
+    max-width: 800px;
+    /* margin: 40px auto !important; */
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.table-area__table {
+    margin: 40px auto;
+    width: 100%;
+}
+/* 診療予定　時間 */
+.table-area__textbox {
+    margin-left: 75px;
+}
+/* 診療予定　表 */
+.schedule-table {
+    color: #444;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+.schedule-table__time {
+    white-space: nowrap;
+}
+/* 診療予定　日時 */
+.inline-text {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 17px;
+}
+.contact {
+    text-align: center;
+}
+.contact-text {
+    font-size: 16px;
+}
+.contact-text__tell a {
+    font-size: 24px;
+    text-decoration: none;
+}
+.footer {
+    width: auto;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.footer__nav {
+    margin: 20px auto;
+}
+.footer__nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer__nav ul li {
+    margin-right: 10px;
+}
+.footer__nav ul li a {
+    text-decoration: none;
+}
+.base-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.base-info__logo img {
+    object-fit: cover;
+    object-position: 80% 0;
+    width: 100%;
+    height: 100%;
+}
+.base-info__text {
+    text-align: left;
+    margin-left: 10px;
+}
+.map {
+    width: auto;
+    height: 300px;
+    background: #ccc;
+}
