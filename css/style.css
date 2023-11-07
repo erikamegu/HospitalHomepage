@@ -14,21 +14,14 @@ html {
 
 body {
     color: #111;
-    background-color: #f2f6f7;
-    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", YuGothic,
-        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-        Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+    background-color: #fff;
+    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic",
+        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+        "ＭＳ ゴシック", "MS Gothic", sans-serif;
     word-wrap: break-word;
     height: 100%;
     line-height: 2.2;
 }
-
-/* ★明朝体の文字変えれない */
-/* .font_mincho {
-    font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",
-        "ＭＳ Ｐ明朝", "MS PMincho", serif;
-} */
 
 section,
 article {
@@ -58,13 +51,13 @@ li {
 }
 
 a {
-    color: #0099cc;
+    color: rgb(59, 215, 220);
     -webkit-transition: 0.2s linear;
     -moz-transition: 0.2s linear;
     transition: 0.2s linear;
 }
 a:hover {
-    color: #00cccc;
+    color: rgb(59, 215, 220);
     text-decoration: none;
 }
 
@@ -83,10 +76,7 @@ table td {
     clear: both;
     visibility: hidden;
 }
-
-/*
-ヘッダー
--------------------------------------------*/
+/* ヘッダー */
 header {
     width: 100%;
     position: fixed;
@@ -95,11 +85,6 @@ header {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-}
-
-header.fixed {
-    background-color: #111;
-    background-color: rgba(242, 246, 247, 0.9);
 }
 
 header h1 a img {
@@ -111,16 +96,14 @@ header h1 a img {
     cursor: pointer;
     overflow: hidden;
 }
-/* 当院について　ヘッダーラベル */
 .pankuzu {
     background-color: #e9f9fa;
     font-size: 14px;
     line-height: 30px;
-    color: rgb(59, 239, 245);
+    color: rgb(59, 215, 220);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    /* opacityつけれない */
 }
 
 .pankuzu ul {
@@ -134,10 +117,9 @@ header h1 a img {
     display: inline-block;
 }
 
-/* 当院について　ヘッダー　HOME  */
 .pankuzu li a {
     text-decoration: none;
-    color: rgb(59, 239, 245);
+    color: rgb(59, 215, 220);
 }
 
 .pankuzu li a::after {
@@ -154,15 +136,12 @@ header h1 a img {
     padding-right: 5px;
 }
 
-/*
-メインコンテンツ
--------------------------------------------*/
+/* メインコンテンツ */
 .content {
     width: 100%;
-    background-color: #f2f6f7;
+    background-color: #fff;
     color: #111;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 .cont_wrap {
     max-width: 1200px;
@@ -176,7 +155,7 @@ header h1 a img {
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
-    height: 340px;
+    height: 500px;
     line-height: 30px;
     padding-top: 180px;
     width: 100%;
@@ -225,8 +204,8 @@ header h1 a img {
     font-size: 50px;
     letter-spacing: 1px;
     font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",
-        "ＭＳ Ｐ明朝", "MS PMincho", serif;
+        "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
+        "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     font-weight: normal;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -238,26 +217,31 @@ header h1 a img {
     line-height: 2.4;
 }
 
-/* 全ての見出しのマージンボトム  */
 .content h2 {
-    font-size: 28px;
+    font-size: 30px;
     line-height: 2.2;
     margin-bottom: 50px;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     border-bottom-style: dotted;
-    border-bottom-color: #15394a;
-    font-weight: normal;
+    border-bottom-color: rgb(168, 244, 247);
+    font-weight: bold;
     letter-spacing: 1px;
-    color: #111;
+    color: rgb(59, 215, 220);
     text-align: center;
     font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",
-        "ＭＳ Ｐ明朝", "MS PMincho", serif;
+        "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
+        "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     padding-top: 30px;
     padding-right: 10px;
     padding-bottom: 30px;
     padding-left: 10px;
     clear: both;
+}
+
+.width-content {
+    width: 100%;
+    max-width: 1200px !important;
+    margin: 0 auto;
 }
 
 .content h2 i {
@@ -266,9 +250,9 @@ header h1 a img {
 }
 
 .content h2 span {
-    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", YuGothic,
-        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-        Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", "YuGothic",
+        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+        "Meiryo", "Osaka", "ＭＳ ゴシック", "MS Gothic", sans-serif;
     font-size: 24px;
     color: #42cbe3;
     font-weight: bold;
@@ -292,10 +276,10 @@ header h1 a img {
     padding-bottom: 15px;
     padding-left: 44px;
     font-weight: normal;
-    color: #2e94ad;
+    color: #78c7dd;
     font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",
-        "ＭＳ Ｐ明朝", "MS PMincho", serif;
+        "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
+        "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     clear: both;
     letter-spacing: 0.05em;
 }
@@ -314,9 +298,9 @@ header h1 a img {
 .content h3 span {
     font-size: 15px;
     color: #555;
-    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", YuGothic,
-        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-        Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", "YuGothic",
+        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+        "Meiryo", "Osaka", "ＭＳ ゴシック", "MS Gothic", sans-serif;
     padding-left: 15px;
 }
 .content h4 {
@@ -334,16 +318,10 @@ header h1 a img {
     margin-bottom: 0px;
     margin-left: 30px;
 }
-
-/* Contentのp全部にきいちゃう */
-/* .content p {
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-} */
+.cont_wrap_effect-text {
+    display: flex;
+    justify-content: center;
+}
 
 .content .ul_news li {
     font-size: 16px;
@@ -376,10 +354,9 @@ header h1 a img {
     text-decoration: none;
     cursor: pointer;
 }
-
 .content .ul_news li a:hover {
     color: #000;
-    background-color: #fff;
+    background-color: #d0f7ff;
 }
 
 .img_center {
@@ -410,28 +387,25 @@ header h1 a img {
     right: 0;
     bottom: 0;
 }
-
 .img_left {
     float: left;
-    padding-top: 20px;
     padding-right: 50px;
     padding-left: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     max-width: 50%;
 }
 .img_right {
     float: right;
-    padding-top: 20px;
     padding-right: 30px;
     padding-left: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     max-width: 50%;
 }
-
 .img_left img,
 .img_right img,
 .img_center img {
     width: 100%;
+    border-radius: 50px;
 }
 
 .content .img_left p,
@@ -479,9 +453,6 @@ a.ap {
     margin-top: -50px;
 }
 
-/*
-コンテンツ大ボタン
--------------------------------------------*/
 .btn_cnt a {
     font-size: 16px;
     color: #fff;
@@ -499,9 +470,8 @@ a.ap {
     padding-bottom: 10px;
     clear: both;
     font-weight: bold;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
+    border-radius: 100px;
+    border: 3px solid #11bbdd;
 }
 .btn_cnt a i {
     padding-right: 10px;
@@ -509,6 +479,7 @@ a.ap {
 .btn_cnt a:hover {
     color: #11bbdd;
     background-color: #fff;
+    border: 3px solid #11bbdd;
 }
 
 .btn_cnt.rt a {
@@ -517,9 +488,6 @@ a.ap {
     margin-right: 10px;
 }
 
-/*
-トップへ戻るボタン
--------------------------------------------*/
 .to_top {
     position: fixed;
     bottom: 0px;
@@ -543,20 +511,13 @@ a.ap {
     color: #fff;
 }
 
-/*
-フッター
--------------------------------------------*/
-
+/* フッター */
 footer {
-    background-color: #dce7e9;
+    background-color: rgba(206, 253, 255, 0.5);
     color: #345;
     clear: both;
     width: 100%;
     display: block;
-    padding-top: 20px;
-    border-bottom-width: 20px;
-    border-bottom-style: solid;
-    border-bottom-color: #d2e1e3;
 }
 
 footer .cont_wrap {
@@ -659,9 +620,7 @@ footer .box_pr {
     color: #55838a;
 }
 
-/*
-各種テーブル
--------------------------------------------*/
+/* 各種テーブル */
 .content table.table_01 {
     width: 96%;
     margin-top: 20px;
@@ -715,14 +674,12 @@ footer .box_pr {
     color: #ccc;
 }
 
-/*
-トップ下部ピックアップ
--------------------------------------------*/
 .pick_up {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* HOME 治療内容　写真 */
 .pick_up ul {
     margin-left: auto;
     margin-right: auto;
@@ -753,6 +710,7 @@ footer .box_pr {
 }
 .pick_up ul li a {
     display: block;
+    border-radius: 50px;
     overflow: hidden;
     position: relative;
     -webkit-transition: 0.2s linear;
@@ -818,10 +776,7 @@ footer .box_pr {
     letter-spacing: 2px;
 }
 
-/*
-コンテンツボックス
--------------------------------------------*/
-
+/* コンテンツボックス */
 .box_cont {
     width: 100%;
     max-width: 1200px;
@@ -844,12 +799,11 @@ footer .box_pr {
     width: 48%;
     min-height: 200px;
     padding: 10px;
-    border: 1px solid #cfdee0;
+    border: 3px solid #1bd;
     margin-bottom: 30px;
 }
-
 .box_cont .box_c_in:hover {
-    background-color: #fff;
+    background-color: #d0f7ff;
     border-top-color: #1bd;
     border-right-color: #1bd;
     border-bottom-color: #1bd;
@@ -864,33 +818,30 @@ footer .box_pr {
 .content .box_cont .box_c_in h2 {
     padding-bottom: 10px;
     font-size: 24px;
-    border-bottom-width: 1px;
-    border-bottom-color: #ccc;
+    border-bottom-width: 2px;
+    border-bottom-color: #959595;
     padding-top: 10px;
 }
 
-/*
-背景入り帯
--------------------------------------------*/
+.coram-text-box {
+    margin-bottom: 150px;
+}
 
 .obi_001 {
-    /* background-image: url(); */
     background-repeat: no-repeat;
     text-align: center;
     padding-top: 15%;
     padding-right: 20px;
     padding-bottom: 15%;
     padding-left: 20px;
-    /* background-size: cover; */
     background-attachment: fixed;
     background-position: center bottom;
-    color: #fff;
+    color: #696969;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
 .content .obi_001 h2 {
-    color: #fff;
+    color: rgb(59, 215, 220);
     border-bottom: none;
     padding-bottom: 0px;
 }
@@ -939,17 +890,15 @@ footer .box_pr {
         font-size: 16px;
     }
 
-    /*
-ヘッダー
--------------------------------------------*/
+    /* ヘッダー */
     header {
         height: 90px;
     }
 
     header h1 a img {
-        top: 23px;
+        top: 10px;
         left: 10px;
-        height: 44px;
+        height: 100px;
     }
 
     .menu_btn,
@@ -957,9 +906,7 @@ footer .box_pr {
         display: none;
     }
 
-    /*
-PCグローバルナビ
--------------------------------------------*/
+    /* PCグローバルナビ */
     #g_navi {
         position: absolute;
         right: 10px;
@@ -976,16 +923,16 @@ PCグローバルナビ
 
     #g_navi li a {
         width: auto;
-        padding: 10px;
+        padding: 15px;
         line-height: 30px;
         display: block;
-        color: #111;
+        color: #434343;
         text-decoration: none;
         text-align: center;
         position: relative;
         float: left;
         letter-spacing: 1px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: bold;
     }
 
@@ -1040,35 +987,29 @@ PCグローバルナビ
         display: none;
     }
 
-    /*
-ヘッダー
--------------------------------------------*/
-
     #index_top {
         min-height: 850px;
     }
-
     #sub_top.sample {
-        background-image: url(../img/sub_top_sample.jpg);
+        background-image: url(../img/PAKU150710030659_TP_V.jpg);
     }
     #sub_top.faq {
         background-image: url(../img/sub_top_faq.jpg);
     }
-    /* お問い合わせ　メイン画像 */
     #sub_top.contact {
         background-image: url(../img/takerukuma0149_TP_V.jpg);
+        object-position: center center;
     }
-    /* お知らせ/コラム　メイン画像  */
     #sub_top.news {
         background-image: url(../img/infant-8269274_1280.jpg);
     }
-    /* 当院について　メイン画像位置変えたい */
     #sub_top.concept {
-        background-image: url(../img/childrens-hospital-4043119_1280.jpg);
+        background-image: url(../img/26499130_m.jpg);
+        object-position: bottom center;
     }
-    /* 診療内容　メイン画像 */
     #sub_top.works {
         background-image: url(../img/kid0051-004.jpg);
+        object-position: center center;
     }
     #sub_top.about {
         background-image: url(../img/sub_top_about.jpg);
@@ -1078,20 +1019,13 @@ PCグローバルナビ
         display: none !important;
     }
 }
-/*-- /960px～ --*/
 
+/* 960px~ */
 @media screen and (min-width: 1200px) {
     header h1 a img {
-        left: 50%;
-        margin-left: -590px;
-    }
-
-    header #g_navi {
-        right: 50%;
-        margin-right: -590px;
+        margin: 20px;
     }
 }
-
 @media screen and (max-width: 960px) {
     body {
         font-size: 16px;
@@ -1104,7 +1038,7 @@ PCグローバルナビ
     img {
         max-width: 100% !important;
         height: auto;
-        width/***/: auto;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1114,10 +1048,7 @@ PCグローバルナビ
         margin-left: 10px;
     }
 
-    /*
-メニューボタン
--------------------------------------------*/
-
+    /* メニューボタン */
     .menu_btn {
         display: block;
         height: 40px;
@@ -1197,9 +1128,7 @@ PCグローバルナビ
         -moz-transform: rotate(45deg) translateY(0px);
     }
 
-    /*
-グローバルナビ
--------------------------------------------*/
+    /* グローバルナビ */
     #g_navi {
         position: fixed;
         width: 100%;
@@ -1248,9 +1177,6 @@ PCグローバルナビ
         color: #1bd;
     }
 
-    /*
-メニューシャドウ
--------------------------------------------*/
     .bg_bl {
         background-color: #fff;
         height: 100%;
@@ -1263,10 +1189,7 @@ PCグローバルナビ
         z-index: 2000;
     }
 
-    /*
-ヘッダー
--------------------------------------------*/
-
+    /* ヘッダー */
     header {
         height: 52px;
     }
@@ -1274,7 +1197,7 @@ PCグローバルナビ
     header h1 a img {
         top: 10px;
         left: 10px;
-        height: 36px;
+        height: 50px;
     }
 
     header .h_menu {
@@ -1286,30 +1209,28 @@ PCグローバルナビ
     }
 
     #sub_top.sample {
-        background-image: url(../img/sub_top_sample_sp.jpg);
+        background-image: url(../img/PAKU150710030659_TP_V.jpg);
     }
     #sub_top.faq {
         background-image: url(../img/sub_top_faq_sp.jpg);
     }
     #sub_top.contact {
-        background-image: url(../img/sub_top_contact_sp.jpg);
+        background-image: url(../img/takerukuma0149_TP_V.jpg);
     }
     #sub_top.news {
-        background-image: url(../img/sub_top_news_sp.jpg);
+        background-image: url(../img/infant-8269274_1280.jpg);
     }
     #sub_top.concept {
-        background-image: url(../img/sub_top_concept_sp.jpg);
+        background-image: url(../img/26499130_m.jpg);
     }
     #sub_top.works {
-        background-image: url(../img/sub_top_works_sp.jpg);
+        background-image: url(../img/kid0051-004.jpg);
     }
     #sub_top.about {
         background-image: url(../img/sub_top_about_sp.jpg);
     }
 
-    /*
-フッター
--------------------------------------------*/
+    /* フッター */
     footer {
         border-bottom-width: 60px;
     }
@@ -1326,11 +1247,8 @@ PCグローバルナビ
         display: none;
     }
 }
-/*-- /～960px --*/
+/* ~960px */
 
-/*
-無限ループ
--------------------------------------------*/
 .loop_wrap_base {
     width: 100%;
     height: auto;
@@ -1451,10 +1369,7 @@ PCグローバルナビ
     animation-play-state: paused;
 }
 
-/*
-SNSボタン
--------------------------------------------*/
-
+/* SNSボタン */
 .h_sns {
     padding: 5px;
     position: fixed;
@@ -1641,19 +1556,15 @@ SNSボタン
     #sub_top {
         font-size: 24px;
     }
-
     .content h2 {
         font-size: 24px;
+        font-weight: bold;
     }
-
     .content .obi_001 h2 {
-        font-size: 22px;
+        font-size: 25px;
     }
 }
 
-/*
-エフェクト
--------------------------------------------*/
 .effect {
     opacity: 0;
     filter: alpha(opacity=0);
@@ -1691,8 +1602,6 @@ SNSボタン
     -moz-transform: translateY(0px);
 }
 
-/*------------------------------*/
-
 .obi_002 .box_in p a.tel {
     font-size: 24px;
     color: #fff;
@@ -1707,26 +1616,20 @@ SNSボタン
 .content .box_att {
     margin-top: 30px;
 }
-
 .content .box_att h2 {
-    font-weight: normal;
-    font-size: 24px;
-    color: #3eadbd;
+    font-size: 30px;
+    color: rgb(59, 215, 220);
     padding: 15px;
-    border-bottom-color: #8ed1db;
+    border-bottom-color: rgb(168, 244, 247);
 }
-/* HOME 治療内容　文章  */
 .content .box_att p {
     font-size: 15px;
     margin-bottom: 25px;
-    color: #9c9b9b;
+    color: #8f8e8e;
     letter-spacing: 5px;
     text-align: center;
 }
 
-/*
-FAQ
--------------------------------------------*/
 dl.faq {
     display: block;
     margin: auto;
@@ -1735,8 +1638,8 @@ dl.faq {
 
 dl.faq dt {
     font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "游明朝", YuMincho, "Sawarabi Mincho", "HG明朝E",
-        "ＭＳ Ｐ明朝", "MS PMincho", serif;
+        "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
+        "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     font-size: 20px;
     color: #fff;
     background-color: #278498;
@@ -1755,9 +1658,9 @@ dl.faq dt {
 }
 
 dl.faq dt::before {
-    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", YuGothic,
-        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
-        Osaka, "ＭＳ ゴシック", "MS Gothic", sans-serif;
+    font-family: "Zen Maru Gothic", "游ゴシック", "Yu Gothic", "YuGothic",
+        "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ",
+        "Meiryo", "Osaka", "ＭＳ ゴシック", "MS Gothic", sans-serif;
     font-size: 24px;
     content: "Q.";
     position: absolute;
@@ -1823,10 +1726,6 @@ dl.faq dd::before {
     left: 20px;
     top: 13px;
 }
-
-/*
-事例一覧＆ギャラリー
--------------------------------------------*/
 
 .works_list li {
     display: block;
@@ -1912,10 +1811,6 @@ dl.faq dd::before {
     transform: scale(1.05);
 }
 
-/*
-Facebook
--------------------------------------------*/
-
 .content .cont_wrap .box_left {
     width: 50%;
     float: left;
@@ -1953,10 +1848,6 @@ Facebook
         width: 33.33%;
     }
 }
-
-/*
-ページャー
--------------------------------------------*/
 
 .pager {
     padding-top: 50px;
