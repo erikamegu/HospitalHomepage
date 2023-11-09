@@ -141,7 +141,34 @@ header h1 a img {
     width: 100%;
     background-color: #fff;
     color: #111;
-    padding-top: 50px;
+    padding-top: 150px;
+}
+.content-second {
+    width: 100%;
+    background-color: #fff;
+    color: #111;
+    padding-top: 30px;
+}
+
+.content-second h2 {
+    font-size: 30px;
+    line-height: 2.2;
+    margin-bottom: 50px;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(168, 244, 247);
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(59, 215, 220);
+    text-align: center;
+    font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
+        "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    /* padding-top: 30px; */
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    clear: both;
 }
 .cont_wrap {
     max-width: 1200px;
@@ -231,7 +258,7 @@ header h1 a img {
     font-family: "Zen Maru Gothic", "ヒラギノ明朝 ProN W3",
         "Hiragino Mincho ProN", "游明朝", "YuMincho", "Sawarabi Mincho",
         "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     padding-right: 10px;
     padding-bottom: 30px;
     padding-left: 10px;
@@ -620,6 +647,9 @@ footer .box_pr {
     color: #55838a;
 }
 
+.footer__infomation {
+    margin-bottom: 100px;
+}
 /* 各種テーブル */
 .content table.table_01 {
     width: 96%;
@@ -1463,15 +1493,18 @@ footer .box_pr {
     }
 
     .content {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 50px;
     }
 
     .content p {
-        margin-bottom: 20px;
-        margin-top: 10px;
+        /* margin-bottom: 50px;
+        margin-top: 10px; */
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .box-bottom {
+        margin-bottom: 100px;
     }
 
     .img_left,
@@ -1613,8 +1646,8 @@ footer .box_pr {
     font-size: 150%;
 }
 
-.content .box_att {
-    margin-top: 30px;
+.box_att {
+    margin-top: 100px;
 }
 .content .box_att h2 {
     font-size: 30px;
@@ -1898,7 +1931,7 @@ dl.faq dd::before {
 @media only screen and (max-width: 767px) {
     .pager {
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 100px;
     }
     .pager .pagination li {
         display: none;
