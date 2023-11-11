@@ -183,14 +183,13 @@ header h1 a img {
     background-position: top;
     background-attachment: fixed;
     height: 500px;
-    line-height: 30px;
     padding-top: 180px;
     width: 100%;
     background-size: 100%;
     text-align: center;
     font-weight: bold;
     color: #fff;
-    font-size: 34px;
+    font-size: 40px;
     letter-spacing: 0.1em;
     -moz-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     -webkit-text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -536,6 +535,11 @@ a.ap {
 .to_top a:hover {
     background-color: #1bd;
     color: #fff;
+}
+
+.cont_wrap.effect.clfix h2 {
+    font-weight: bold;
+    color: #8f8e8e;
 }
 
 /* フッター */
@@ -1053,7 +1057,7 @@ footer .box_pr {
 /* 960px~ */
 @media screen and (min-width: 1200px) {
     header h1 a img {
-        margin: 20px;
+        margin: 10px;
     }
 }
 @media screen and (max-width: 960px) {
@@ -1489,7 +1493,7 @@ footer .box_pr {
 
     #sub_top {
         height: 180px;
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .content {
@@ -1497,8 +1501,7 @@ footer .box_pr {
     }
 
     .content p {
-        /* margin-bottom: 50px;
-        margin-top: 10px; */
+        margin-top: 10px;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -1650,7 +1653,6 @@ footer .box_pr {
     margin-top: 100px;
 }
 .content .box_att h2 {
-    font-size: 30px;
     color: rgb(59, 215, 220);
     padding: 15px;
     border-bottom-color: rgb(168, 244, 247);

@@ -23,13 +23,7 @@ header {
 }
 
 .content {
-    /* margin-top: 100px; */
     margin-bottom: 100px;
-}
-.cont_wrap.effect.clfix h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #8f8e8e;
 }
 
 .obi_001 h2 {
@@ -61,7 +55,6 @@ header {
 }
 
 .box_att h2 {
-    font-size: 50px;
     font-weight: bold;
 }
 
