@@ -1,5 +1,4 @@
 # HospitalHomepage
 架空のこどもクリニックのホームページ
 
-### デザインツール
-- Figma:
+### Githubページ：https://erikamegu.github.io/HospitalHomepage
