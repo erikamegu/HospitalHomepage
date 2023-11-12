@@ -142,16 +142,10 @@ header h1 a img {
     font-weight: bold;
     color: rgb(59, 215, 220);
     position: absolute;
-    top: 28%;
+    top: 25%;
     left: 5%;
     line-height: 1.5;
     text-align: center;
-    /* z-index: 10;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center; */
 }
 
 /* メインコンテンツ */
@@ -1550,7 +1544,6 @@ footer .box_pr {
     }
 
     .obi_001 {
-        background-image: url(../img/obi_001.jpg);
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1949,6 +1942,10 @@ dl.faq dd::before {
 .pager .pagination li a.active {
     color: #000;
     background-color: #f9f9f9;
+}
+
+.main-coram-img {
+    background-image: url(../img/PAKU150710030659_TP_V.jpg);
 }
 
 @media only screen and (max-width: 767px) {

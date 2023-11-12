@@ -105,4 +105,13 @@ header {
     .mobile-br {
         display: inline-block;
     }
+    .main-img-text {
+        font-size: 40px;
+        top: 65%;
+        left: 8%;
+    }
+
+    .index-top {
+        height: 50vh;
+    }
 }
